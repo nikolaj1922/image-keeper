@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply scrollbar-thumb-[#3D293F] scrollbar-thin;
+  }
+}
+
+@layer components {
+  .header {
+    @apply min-h-[80px] sm:min-h-[129px] w-full border-b border-gray-200 px-[25px] sm:px-[50px] py-[25px] pt-[25px] sm:pt-[50px] flex justify-between fixed top-0 left-0 z-100 bg-white;
+  }
+}

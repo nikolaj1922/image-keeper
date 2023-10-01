@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "incremental": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "target": "es5",
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "rootDir": ".",
+    "paths": {
+      "@ui/*": [
+        "./ui/*"
+      ],
+      "@assets/*": [
+        "./public/assets/*"
+      ],
+      "@images/*": [
+        "./public/images/*"
+      ],
+      "@constants/*": [
+        "./constants/*"
+      ],
+      "@libs/*": [
+        "./libs/*"
+      ],
+      "@mytypes/*": [
+        "./types/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ]
+    },
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
