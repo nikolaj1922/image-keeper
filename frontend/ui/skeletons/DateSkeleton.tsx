@@ -1,6 +1,6 @@
 import ContentLoader from 'react-content-loader'
 
-export const DateSkeleton = props => (
+export const DateSkeleton = (props: any) => (
   <ContentLoader
     speed={2}
     width={214}

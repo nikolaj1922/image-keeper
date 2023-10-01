@@ -15,22 +15,28 @@ export const WithImages: React.FC<WithImagesProps> = ({
   handleDeleteImage,
   handleDownloadImage
 }) => {
-  return sortImages(images).map(({ year, months }) => {
-    return months.map(data => {
-      const [month] = Object.keys(data!)
+  const sortedImages = sortImages(images)
 
-      return (
-        <MonthAlbum
-          key={data![month][0].key}
-          month={month}
-          data={data![month]}
-          year={year.slice(2)}
-          length={data![month].length}
-          handleEditMode={handleEditMode}
-          handleDeleteImage={handleDeleteImage}
-          handleDownloadImage={handleDownloadImage}
-        />
-      )
-    })
-  })
+  return (
+    <>
+      {sortedImages.map(({ year, months }) => {
+        return months.map(data => {
+          const [month] = Object.keys(data!)
+
+          return (
+            <MonthAlbum
+              key={data![month][0].key}
+              month={month}
+              data={data![month]}
+              year={year.slice(2)}
+              length={data![month].length}
+              handleEditMode={handleEditMode}
+              handleDeleteImage={handleDeleteImage}
+              handleDownloadImage={handleDownloadImage}
+            />
+          )
+        })
+      })}
+    </>
+  )
 }
