@@ -11,6 +11,6 @@ InterWeb Lab. test task
   -->  schema.prisma:7
    |
  6 |   provider = "postgresql"
- 7 |   url      = env("DATABASE_URL")
+ 7 |   url      = env("DATABASE_URL") необходимо повторить шаг 2.
 
-НУЖНО ПОВТОРИТЬ ШАГ 2.
+
