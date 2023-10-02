@@ -7,6 +7,8 @@ InterWeb Lab. test task
 3) Сгенерировать клиент Prisma в папке backend с помощью команды npx prisma generate
 4) Запустить сервер из папки backend с помощью команды npm run start
 5) Запустить фронтенд приложение из папки frontend с помощью команды npm run dev
+
+Для того чтобы увидеть процесс загрузки картинки как в макете, можно выставить throttling в панели разработчика на Fast или Slow 3G 
    
 Если в backend возникает такая ошибка: Environment variable not found: DATABASE_URL.
   -->  schema.prisma:7
